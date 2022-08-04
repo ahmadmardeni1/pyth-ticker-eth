@@ -11,9 +11,9 @@ const Home: NextPage = () => {
   const [solConfidence, setSolConfidence] = useState(0);
 
   useEffect(() => {
-    const connection = new Connection("http://api.mainnet-beta.solana.com");
+    const connection = new Connection("https://api.devnet.solana.com");
     const programKey = new PublicKey(
-      "JBu1AL4obBcCMqKBBxhpWCNUt136ijcuMZLFvTP7iWdB"
+      "gSbePebfvPy7tRqimPoVecS2UsBvYv46ynrzWocc92s"
     );
     const pythConnection = new PythConnection(connection, programKey);
 
